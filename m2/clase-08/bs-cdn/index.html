@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Grillas</title>
+
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="p-4">
+
+  <h1 class="text-center text-primary mb-5">Ejemplos del Sistema de Grillas</h1>
+
+  <!-- Ejemplo original -->
+  <div class="container mt-4">
+    <h2 class="mb-3">Ejemplo básico (3 columnas)</h2>
+    <div class="row">
+      <div class="col-sm-4 bg-light p-3 border">Caja 1</div>
+      <div class="col-sm-4 bg-light p-3 border">Caja 2</div>
+      <div class="col-sm-4 bg-light p-3 border">Caja 3</div>
+    </div>
+  </div>
+
+  <!-- Ejemplo 1 -->
+  <!-- Ejemplo 1 -->
+  <div class="container my-4">
+    <!-- container → centra y da márgenes laterales
+       my-4 → margin vertical (arriba y abajo) -->
+
+    <h2 class="mb-3">Ejemplo 1: Una columna en móvil, dos en desktop</h2>
+
+    <div class="row">
+      <!-- row → inicia una fila de la grilla -->
+
+      <div class="col-12 col-md-6 bg-warning p-3 border">
+        <!-- col-12 → ocupa 12 columnas en móvil (100%) -->
+        <!-- col-md-6 → ocupa 6 columnas desde tamaño md (tablet/desktop) -->
+        <!-- bg-warning → fondo amarillo Bootstrap -->
+        <!-- p-3 → padding interno -->
+        <!-- border → borde gris suave -->
+        Columna A
+      </div>
+
+      <div class="col-12 col-md-6 bg-info p-3 border">
+        <!-- col-12 → ocupa 100% en móvil -->
+        <!-- col-md-6 → 50% en tablet/desktop -->
+        <!-- bg-info → fondo celeste -->
+        <!-- p-3 → padding -->
+        <!-- border → borde -->
+        Columna B
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Ejemplo 2 -->
+  <!-- Ejemplo 2 -->
+  <div class="container my-4">
+    <!-- container → limita el ancho y centra el contenido -->
+    <!-- my-4 → margen vertical -->
+
+    <h2 class="mb-3">Ejemplo 2: Tres columnas automáticas</h2>
+
+    <div class="row">
+      <!-- row → fila de la grilla -->
+
+      <div class="col bg-light p-3 border text-center">
+        <!-- col → columna flexible, reparte espacio automáticamente -->
+        <!-- bg-light → fondo gris claro -->
+        <!-- p-3 → padding -->
+        <!-- border → borde -->
+        <!-- text-center → centra el texto -->
+        1
+      </div>
+
+      <div class="col bg-light p-3 border text-center">
+        <!-- col → el mismo ancho que los demás -->
+        2
+      </div>
+
+      <div class="col bg-light p-3 border text-center">
+        <!-- col → ocupa el espacio restante -->
+        3
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Ejemplo 3 -->
+  <div class="container my-4">
+    <!-- container → centra todo y limita el ancho -->
+    <!-- my-4 → añade margen vertical -->
+
+    <h2 class="mb-3">Ejemplo 3: Columnas 4 + 4 + 4</h2>
+
+    <div class="row">
+      <!-- row → fila donde se distribuyen las columnas -->
+
+      <div class="col-12 col-md-4 bg-light p-3 border text-center">
+        <!-- col-12 → 100% ancho en móvil -->
+        <!-- col-md-4 → ocupa 4 columnas (1/3 del espacio) en desktop -->
+        <!-- bg-light → fondo gris claro -->
+        <!-- p-3 → padding -->
+        <!-- border → borde -->
+        <!-- text-center → texto centrado -->
+        Col 1
+      </div>
+
+      <div class="col-12 col-md-4 bg-light p-3 border text-center">
+        <!-- mismas reglas que la columna anterior -->
+        Col 2
+      </div>
+
+      <div class="col-12 col-md-4 bg-light p-3 border text-center">
+        <!-- todas ocupan 4 columnas cada una → 4 + 4 + 4 = 12 -->
+        Col 3
+      </div>
+
+    </div>
+  </div>
+
+  <!-- EJEMPLO DE TABLA BOOTSTRAP -->
+  <div class="container my-5">
+    <h2 class="mb-3">Ejemplo de Tabla con Bootstrap</h2>
+
+    <!-- table → activa estilos de tabla
+       table-striped → alterna colores de fila
+       table-hover → resalta filas al pasar el mouse (opcional)
+       table-bordered → agrega bordes -->
+    <table class="table table-striped table-hover table-bordered">
+
+      <thead class="table-dark">
+        <!-- table-dark → encabezado oscuro -->
+        <tr>
+          <th>Nombre</th>
+          <th>Edad</th>
+          <th>Ciudad</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Ana</td>
+          <td>25</td>
+          <td>Santiago</td>
+        </tr>
+        <tr>
+          <td>Lucas</td>
+          <td>30</td>
+          <td>Valparaíso</td>
+        </tr>
+        <tr>
+          <td>Martina</td>
+          <td>22</td>
+          <td>Concepción</td>
+        </tr>
+      </tbody>
+
+    </table>
+  </div>
+
+  <!-- ALERTAS EN BOOTSTRAP -->
+  <div class="container my-5">
+    <h2 class="mb-3">Ejemplo de Alertas con Bootstrap</h2>
+
+    <!-- alert: estilo base
+       alert-primary: color azul -->
+    <div class="alert alert-primary">
+      Este es un mensaje de información (primary).
+    </div>
+
+    <!-- alert-danger: color rojo, usado para errores -->
+    <div class="alert alert-danger">
+      Error: algo salió mal.
+    </div>
+
+    <!-- alert-success: verde, usado para confirmaciones -->
+    <div class="alert alert-success">
+      ¡Acción realizada con éxito!
+    </div>
+
+    <!-- alert-warning: amarillo, advertencias -->
+    <div class="alert alert-warning">
+      Aviso: revisa los datos antes de continuar.
+    </div>
+
+    <!-- alert-dismissible: permite cerrar la alerta
+       fade + show: animación suavizada -->
+    <div class="alert alert-info alert-dismissible fade show" role="alert">
+      Este mensaje puedes cerrarlo manualmente.
+
+      <!-- botón de cierre -->
+      <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+
+  </div>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

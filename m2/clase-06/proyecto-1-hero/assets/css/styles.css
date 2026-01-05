@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: gray ;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background-image: url('https://aves.ninjas.cl/api/site/assets/files/3099/17082018024245aguilucho_chico_tomas_rivas_web.jpg');
+    /* background-image: url('/assets/img/caner-sanli-eVNsESn8vQo-unsplash.jpg'); */
+    background-size: cover;
+    background-position: top center;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    color: black;
+
+
+
+}
+
+.hero h1 {
+    font-size: 3rem;
+}

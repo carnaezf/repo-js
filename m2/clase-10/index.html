@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase Intro JS</title>
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <h1>Ejemplos de incorporacion de JavaScript</h1>
+
+    <!-- Ejemplo JS en linea -->
+    <button class="btn btn-success my-2"
+        onclick="alert('Hola, soy JS en linea'); console.log('Mensaje desde JS en linea')">
+        JS en linea
+    </button>
+
+    <!-- Ejemplo de JS interno -->
+    <button class="btn btn-primary my-2" onclick="mensajeInterno()">
+        JS Interno
+    </button>
+
+    <!-- Ejemplo de JS externo -->
+    <button onclick="mensajeExterno()" class="btn btn-warning my-2">
+        JS Externo
+    </button>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./assets/js/main.js"></script>
+    <script>
+        function mensajeInterno() {
+            alert("Hola, soy JS interno");
+            console.log("Mensaje desde JS interno")
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

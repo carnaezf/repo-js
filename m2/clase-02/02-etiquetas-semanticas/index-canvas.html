@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Demostración Semántica + Canvas</title>
+</head>
+<body style="font-family: Arial, sans-serif; background:#f9f9f9; margin:0; padding:20px;">
+
+  <header style="background:#004080; color:white; padding:10px;">
+    <h1>Mi Sitio Semántico</h1>
+  </header>
+
+  <main style="margin-top:20px;">
+    <section style="background:#fff; padding:15px; border:1px solid #ddd;">
+      <h2>Sobre esta página</h2>
+      <p>Esta es una demostración básica del uso de etiquetas <strong>semánticas</strong> en HTML5 y el uso de <code>&lt;canvas&gt;</code>.</p>
+    </section>
+
+    <section style="margin-top:20px; background:#fff; padding:15px; border:1px solid #ddd;">
+      <h2>Dibujo con Canvas 🎨</h2>
+      <canvas id="miCanvas" width="200" height="100" style="border:1px solid #000;"></canvas>
+    </section>
+  </main>
+
+  <footer style="margin-top:30px; text-align:center; color:#666;">
+    <p>&copy; 2025 - Curso Front-End</p>
+  </footer>
+
+  <script>
+    const canvas = document.getElementById('miCanvas');
+    const ctx = canvas.getContext('2d');
+
+    // Dibuja un rectángulo azul
+    ctx.fillStyle = '#004080';
+    ctx.fillRect(10, 10, 180, 80);
+
+    // Texto sobre el canvas
+    ctx.fillStyle = '#fff';
+    ctx.font = '16px Arial';
+    ctx.fillText('¡Hola Canvas!', 40, 55);
+  </script>
+
+</body>
+</html>

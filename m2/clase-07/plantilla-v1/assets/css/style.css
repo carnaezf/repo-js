@@ -1,0 +1,26 @@
+/* VARIABLES GENERALES */
+:root {
+    /* Colores básicos */
+    --color-primario: #005bbb;
+    --color-secundario: #00aaff;
+    --color-texto: #333;
+    --color-fondo: #ffffff;
+    --color-gris-suave: #f4f4f4;
+
+    /* Tipografías */
+    --fuente-principal: Arial, Helvetica, sans-serif;
+
+    /* Espaciados */
+    --padding-base: 16px;
+    --padding-grande: 32px;
+    --ancho-maximo: 1200px;
+}
+
+
+/* RESET BÁSICO */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* https://www.youtube.com/watch?v=Vx854s9YE78 */
+}

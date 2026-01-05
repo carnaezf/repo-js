@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Mi primera página semántica</title>
+</head>
+
+<body style="margin: 0; font-family: Arial, sans-serif;">
+
+    <header style="background-color: #004080; color: white; padding: 20px;">
+        <h1 style="margin: 0;">Bienvenidos a mi sitio</h1>
+    </header>
+
+    <nav style="background-color: #cce0ff; padding: 10px;">
+        <a href="#" style="margin-right: 10px;">Inicio</a>
+        <a href="#" style="margin-right: 10px;">Sobre mí</a>
+        <a href="#">Contacto</a>
+    </nav>
+
+    <main style="background-color: #f0f0f0; padding: 20px;">
+        <section style="background-color: #ffffff; padding: 15px; border: 1px solid #ccc;">
+            <h2 style="color: #004080;">Acerca de mí</h2>
+            <p id="info">Hola, soy estudiante de desarrollo web. Estoy aprendiendo HTML semántico y estilos CSS.</p>
+            <button onclick="cambiarTexto()"
+                style="padding: 8px 12px; background-color: #004080; color: white; border: none; cursor: pointer;">
+                Cambiar mensaje
+            </button>
+        </section>
+    </main>
+
+    <footer style="background-color: #333333; color: white; text-align: center; padding: 15px;">
+        <p style="margin: 0;">© 2025 - Todos los derechos reservados</p>
+    </footer>
+
+    <!-- Script de manipulación -->
+    <script>
+        function cambiarTexto() {
+            document.getElementById("info").textContent = "¡Gracias por visitar mi sitio! 😄";
+        }
+    </script>
+
+    <script>
+        // Ejemplo 1: Cambiar el contenido del encabezado directamente
+        document.querySelector('h1').textContent = "¡Hola desde JavaScript!";
+
+        // Ejemplo 2: Cambiar el color de fondo del <main> después de 2 segundos
+        setTimeout(() => {
+            document.querySelector('main').style.backgroundColor = '#e0ffe0';
+        }, 2000);
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título de la página -->
+    <title>Clase 03- Modulo 02</title>
+
+</head>
+
+<body>
+    <header>
+        <h1>Bienvenidos a la clase de HTML</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Ejercicios</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+
+    </nav>
+
+    <main>
+        <article>
+            <h2>Acerca de mi</h2>
+            <p>Hola, soy estudiante de desarrollo web.</p>
+
+            <hr>
+
+            <div id="contacto">
+                <h3>Contacto</h3>
+                <p>Puedes escribirme a mi correo o llenar el formulario.</p>
+            </div>
+
+
+
+
+            <h2>Introduccion al HTML Semantico</h2>
+            <p>Aprendemos como estructurar un pagina web con HTML5</p>
+        </article>
+
+        <section>
+            <h2>Zona Practica</h2>
+            <div>
+                <!-- Enlace a una seccion en la misma pagina -->
+                <a href="#contacto">Ir a la seccion de contacto</a>
+
+                <br>
+
+                <!-- Ejemplo de video -->
+                <video width="320" height="240" src="media/surf.mp4" controls>
+                    Tu navegador no soporta el elemento de video
+                </video>
+
+
+                <h3>Audio de prueba</h3>
+                <audio controls>
+                    <source src="media/ring.wav" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+
+                <form>
+                    <!-- Entrada de texto para que el usuario ingrese su nombre -->
+                    <label for="nombre">Tu Nombre:</label>
+                    <input type="text" id="nombre" placeholder="Escribe tu nombre">
+                    <button type="submit">Enviar</button>
+                </form>
+
+                <hr>
+                <!-- Ejemplo de lista ordenada -->
+                <h2>Ejemplo de lista ordenada</h2>
+                <ol>
+
+                    <li>Precalentar el horno</li>
+                    <li>Mezclar los ingredientes</li>
+                    <li>Hornear por 30 minutos</li>
+                </ol>
+
+                <h2>
+                    Ejemplo adicional de lista desordenada:
+                </h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+
+
+                <h2>"LISTAS ANIDADAS"</h2>
+                <ul>
+                    <li>Inicio</li>
+
+                    <li>Contacto</li>
+
+                    <li>Servicios
+                        <ul>
+                            <li>Diseño Web</li>
+                            <li>Programación</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Tablas en HTML - Reporte de Ventas</h2>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Mes</th>
+                        <th>Ventas</th>
+                        <th>Costos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Enero</td>
+                        <td>10000</td>
+                        <td>2000</td>
+                    </tr>
+                    <tr>
+                        <td>Febrero</td>
+                        <td>11000</td>
+                        <td>2500</td>
+                    </tr>
+                    <tr>
+                        <td>Marzo</td>
+                        <td>11000</td>
+                        <td>2500</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+
+        <aside>
+            <h3>Dato Adicional</h3>
+            <p>Recuerda que una buena estructura semantica mejora el SEO y la accesibilidad</p>
+        </aside>
+
+
+    </main>
+    <footer>
+        <p>© 2025 Bootcamp Talento Digital | Siguenos... </p>
+    </footer>
+</body>
+
+</html>

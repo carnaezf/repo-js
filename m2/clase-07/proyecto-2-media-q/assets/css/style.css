@@ -1,0 +1,56 @@
+/* VARIABLES GENERALES */
+:root {
+    /* Colores básicos */
+    --color-primario: #005bbb;
+    --color-secundario: #00aaff;
+    --color-texto: #333;
+    --color-fondo: #ffffff;
+    --color-gris-suave: #f4f4f4;
+
+    /* Tipografías */
+    --fuente-principal: Arial, Helvetica, sans-serif;
+
+    /* Espaciados */
+    --padding-base: 16px;
+    --padding-grande: 32px;
+    --ancho-maximo: 1200px;
+}
+
+
+/* RESET BÁSICO */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+
+.caja {
+    background: lightblue;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    font-size: 1rem;
+    flex-direction: column;
+    gap:10px;
+}
+
+
+
+@media (min-width: 600px) {
+    .caja {
+        background: coral;
+        flex-direction: row;
+        padding: 40px;
+    }
+
+}
+
+
+
+
+
+ 

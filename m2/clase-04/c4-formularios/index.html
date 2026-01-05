@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de Formularios</title>
+</head>
+
+<body>
+    <h1>Galeria de formularios</h1>
+
+    <!-- Formularios con inputs variados -->
+
+    <section>
+        <h2>Formulario de Tipos de Input</h2>
+
+        <form>
+            <label for="edad">Edad:</label>
+            <input id="edad" type="number" name="nombre" min="0" max="120">
+            <br>
+            <label for="edad">Fecha de Nacimiento:</label>
+            <input id="fecha" type="date" name="fecha">
+            <br>
+            <label for="edad">Fecha de Nacimiento:</label>
+            <input id="color" type="color" name="color">
+            <br>
+            <label for="archivo">Fecha de Nacimiento:</label>
+            <input id="archivo" type="file" name="archivo">
+            <br>
+            <button type="submit">Enviar Datos</button>
+        </form>
+    </section>
+
+    <section>
+        <!-- Seleccion simple -->
+        <h2>Seleccion Simple</h2>
+        <label for="color">Elige un color:</label>
+        <select id="color" name="color">
+            <option value="rojo">Rojo</option>
+            <option value="verde">Verde</option>
+            <option value="azul">Azul</option>
+        </select>
+    </section>
+
+    <section>
+        <!-- Seleccion Multiple -->
+        <h2>Seleccion Multiple</h2>
+
+        <label for="lenguajes">Que lenguajes te interesan?:</label>
+        <select id="lenguajes" name="lenguajes[]" multiple size="4" >
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js" selected>JavaScript</option>
+            <option value="python">Python</option>
+        </select>
+    </section>
+
+        <section>
+        <!-- Seleccion simple -->
+        <h2>Imput Radio:</h2>
+        <form>
+            <p>Selecciona tu fruta favorita</p>
+
+            <input type="radio" id="manzana" name="fruta" value="manzana">
+            <label for="manzana">Manzana</label><br>
+            
+            <input type="radio" id="platano" name="fruta" value="platano">
+            <label for="platano">Platano</label><br>
+        </form>
+
+    </section>
+
+
+
+
+</body>
+
+</html>
