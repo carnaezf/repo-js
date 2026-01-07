@@ -17,8 +17,9 @@ console.log(5 ** b) // Exponente
 console.log(a);
 
 // incremeto
+
 ++a
-console.log(a);
+console.log("Operador de incremento: ", a);
 
 
 // Decremento
@@ -65,3 +66,23 @@ https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Expressions_and_opera
 
 */
 
+// AND (&&): todas las condiciones deben ser verdaderas
+console.log(5 < 10 && 15 < 20); // true
+console.log(false && false);    // false
+console.log(true && true);      // true
+
+// OR (||): al menos una condición debe ser verdadera
+console.log(5 > 10 || 15 > 20); // false
+console.log(5 < 10 || 15 > 20); // true
+console.log(false || true);     // true
+
+
+// NOT (!)
+console.log(!true)
+console.log(!(5 > 10 || 15 > 20)); // false
+
+// Operador Ternario:
+const isRaining = true
+
+
+isRaining ? console.log("Esta lloviendo") : console.log("No esta lloviendo")
